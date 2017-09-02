@@ -355,7 +355,7 @@ class GiftedChat extends React.Component {
     if (this.textInput) {
       this.textInput.clear();
     }
-    /* this.notifyInputTextReset();*/
+    this.notifyInputTextReset();
     const newComposerHeight = MIN_COMPOSER_HEIGHT;
     const newMessagesContainerHeight = this.getMessagesContainerHeightWithKeyboard(newComposerHeight);
     this.setState({
@@ -394,6 +394,7 @@ class GiftedChat extends React.Component {
   }
 
   notifyInputTextReset() {
+    return;
     if (this.props.onInputTextChanged) {
       this.props.onInputTextChanged('');
     }
