@@ -41,7 +41,7 @@ const styles = StyleSheet.create({
     justifyContent: 'flex-end',
   },
   text: {
-    color: '#0084ff',
+    color: 'rgb(183, 28, 28)',
     fontWeight: '600',
     fontSize: 17,
     backgroundColor: 'transparent',
